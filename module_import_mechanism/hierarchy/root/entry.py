@@ -9,8 +9,13 @@ Traceback (most recent call last):
   File "/Users/Qiuminda/Documents/GitHub/python/hierarchy/root/entry.py", line 9, in <module>
     from root.node import leaf
 ModuleNotFoundError: No module named 'root'
+
+>>> python3 -m root.entry
+Error while finding module specification for 'root.entry' (ModuleNotFoundError: No module named 'root')
+
+in root/ we can only read node folder
 """
-# from root.node import leaf
+from root.node import leaf
 
 
 """
@@ -20,4 +25,5 @@ node imported (node.__init__.py executed)
 leaf imported (leaf.py executed)
 node.leaf (__name__ parameter of leaf)
 """
-from node import leaf
+# from node import leaf
+# import node.leaf # the same, but will be not imported twice
