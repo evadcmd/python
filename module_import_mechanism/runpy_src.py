@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """runpy.py - locating and running Python code using the module namespace
 Provides support for locating and running Python scripts using the Python
 module namespace instead of the native filesystem.
@@ -288,3 +289,6 @@ if __name__ == "__main__":
     else:
         del sys.argv[0] # Make the requested module sys.argv[0]
         _run_module_as_main(sys.argv[0])
+=======
+import runpy
+>>>>>>> dc1d4988ae5a6189d5921b9ec64da331d25509ff
